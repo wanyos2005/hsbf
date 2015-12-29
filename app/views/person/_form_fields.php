@@ -5,6 +5,7 @@ endif;
 if (!isset($input_size)):
     $input_size = 8;
 endif;
+
 $label_class = "col-md-{$label_size} control-label";
 $input_class = "col-md-{$input_size}";
 $half_input_size = $input_size / 2;

@@ -1,0 +1,6 @@
+<chart caption='Harry&apos;s SuperMart' subcaption='Revenue by
+Year' xAxisName='Year' yAxisName='Amount' numberPrefix='$'>
+<set label='2009' value='1487500' />
+<set label='2010' value='2100600' />
+<set label='2011' value='2445400' />
+</chart>

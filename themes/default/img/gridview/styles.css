@@ -1,0 +1,122 @@
+.grid-view-loading
+{
+     background:url(loading.gif) no-repeat;
+}
+
+.grid-view
+{
+	padding:2px 0;
+}
+
+.grid-view table.items
+{
+	/*background: white;
+	border-collapse: collapse;
+	border: 1px #D0E3EF solid;*/
+        width: 100%;
+        border: 1px solid #DDD;
+        border-collapse: collapse;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+}
+
+.grid-view table.items th, .grid-view table.items td
+{
+	/*font-size: 0.8em;
+	border: 1px white solid;
+	padding: 0.3em;*/
+	padding: 5px;
+	line-height: 18px;
+	text-align: left;
+	border-top: 1px solid #DDD;
+                /*border-right: 1px solid #E0E0E0;
+                border-bottom: 1px solid #E0E0E0;*/
+}
+.grid-view table.items th a,.grid-view table.items th
+{
+    color:#999;
+                /*color:#fff;
+	font-weight: bold;
+	text-decoration: none;
+                text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
+                */
+}
+
+.grid-view table.items th a.asc
+{
+	background:url(up.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items th a.desc
+{
+	background:url(down.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items tr.even
+{
+   background: #fff;
+}
+
+.grid-view table.items tr.odd
+{
+   background: #F9F9F9;
+}
+
+.grid-view table.items tr.selected
+{
+	background: #BCE774;
+}
+
+.grid-view table.items tr:hover
+{
+	background: #ECFBD4;
+}
+
+.grid-view .link-column img
+{
+	border: 0;
+}
+
+.grid-view .button-column
+{
+	text-align: center;
+	width: 60px;
+}
+
+.grid-view .button-column img
+{
+	border: 0;
+}
+
+.grid-view .checkbox-column
+{
+	width: 15px;
+}
+
+.grid-view .summary
+{
+	margin: 0 0 5px 0;
+	text-align: right;
+}
+
+.grid-view .pager
+{
+ text-align: right;
+ height: 36px;
+ margin: 18px 0;
+}
+
+.grid-view .empty
+{
+	font-style: italic;
+}
+
+.grid-view .filters input,
+.grid-view .filters select
+{
+	width: 90%;
+	border: 1px solid #ccc;
+}

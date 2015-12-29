@@ -1,0 +1,27 @@
+CREATE EVENT bill ON SCHEDULE EVERY 1 MINUTE STARTS NOW() DO INSERT INTO bpt_bill (business_id) SELECT business_id FROM bpt_business;
+
+CREATE EVENT bill_item ON SCHEDULE EVERY 1 SECOND STARTS NOW() DO INSERT INTO bpt_bill_item (bill_item_ref) SELECT bill_id FROM bpt_bill;
+
+CREATE EVENT delete_expired_accounts ON SCHEDULE EVERY 2 DAY STARTS NOW() DO DELETE FROM tbl_users_applicants WHERE status=1 AND TIME_TO_SEC( TIMEDIFF(NOW(),FROM_UNIXTIME('reg_date'))) >2 AS days;
+
+FROM_UNIXTIME(
+SELECT ()/86400 AS days
+
+
+SELECT * FROM FROM tbl_users_applicants WHERE TIME_TO_SEC( TIMEDIFF(NOW(),FROM_UNIXTIME('reg_date'))) >2 AS days 
+
+SELECT *
+FROM tbl_users_applicants
+WHERE TIME_TO_SEC(DATEDIFF( CURDATE( ) , FROM_UNIXTIME( 'reg_date' ))) >86000
+
+SELECT *
+FROM tbl_users_applicants
+WHERE (
+DATEDIFF( CURDATE( ) , FROM_UNIXTIME( 'reg_date' ) )
+) >80
+
+
+SELECT * FROM FROM tbl_users_applicants WHERE TIME_TO_SEC( DATEDIFF(NOW(),FROM_UNIXTIME('reg_date')))>2 AS days
+
+
+SELECT DATEDIFF( CURDATE( ) , FROM_UNIXTIME( 'reg_date' )) FROM tbl_users_applicants AS days

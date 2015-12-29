@@ -1,0 +1,12 @@
+DELIMITER $$
+CREATE TRIGGER create_bill AFTER INSERT ON bpt_business
+  FOR EACH ROW
+    BEGIN
+      INSERT INTO bpt_bill(bill_business_id) VALUES (NEW.business_id);
+      SET @bill_id=LAST_INSERT_ID();      
+      INSERT INTO bpt_bill_item(bill_item_ref)VALUES(@bill_id);	
+      INSERT INTO global_invoices(invoice_no) VALUES (CONCAT('INV-BPT-',@bill_id));
+      UPDATE bpt_bill_item SET bill_item_amount=(SELECT sbp_fee FROM bpt_fee_schedule WHERE schedule_id=NEW.fee_schedule) WHERE bill_item_id=LAST_INSERT_ID();
+END;
+$$
+DELIMITER;

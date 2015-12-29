@@ -1,0 +1,3 @@
+CREATE TRIGGER pay_bill AFTER INSERT ON bpt_payment
+    BEGIN
+      UPDATE bpt_bill SET bill_status=1 WHERE bill_id=NEW.payment_bill_reference;

@@ -1,0 +1,1 @@
+var MyRedactor={options:"undefined",selector:"undefined",create:function(a,b){MyRedactor.options=b;MyRedactor.selector=a;$(a).redactor(b)},destroy:function(){$(MyRedactor.selector).redactor("destroy")},recreate:function(){$(MyRedactor.selector).redactor(MyRedactor.options)}};

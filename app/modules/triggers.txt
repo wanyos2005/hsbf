@@ -1,0 +1,4 @@
+CREATE EVENT bill ON SCHEDULE EVERY 1 MINUTE STARTS NOW() DO INSERT INTO bpt_bill (business_id) SELECT business_id FROM bpt_business;
+
+CREATE EVENT bill_item ON SCHEDULE EVERY 1 SECOND STARTS NOW() DO INSERT INTO bpt_bill_item (bill_item_ref) SELECT bill_id FROM bpt_bill;
+

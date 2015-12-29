@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/dev/app/views/expenditures/_sideLinks.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/controllers/LoanApplicationsController.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/views/loanApplications/servicingLoans.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/views/loanApplications/table.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/models/Person.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/modules/auth/controllers/RegisterController.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/modules/users/views/default/view.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/views/contributionsByMembers/_sideLinks.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/models/LoanApplications.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/controllers/ExpendituresController.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/models/Voteheads.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/models/Images.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/controllers/ContributionsByMembersController.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/modules/users/controllers/DefaultController.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/models/Defaults.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/models/LoanRepayments.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/views/contributionsByMembers/_form.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/views/loanApplications/payslip.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/views/loanApplications/pendingApplications.php</file>
+            <file>file:/C:/xampp/htdocs/dev/app/views/expenditures/voteHead.php</file>
+        </group>
+    </open-files>
+</project-private>
